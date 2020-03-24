@@ -4,7 +4,7 @@ exports.up = function(knex) {
     table.increments()
 
     table.string('title').notNullable()
-    table.string('subscription').notNullable()
+    table.string('description').notNullable()
     table.decimal('value').notNullable()
 
 
