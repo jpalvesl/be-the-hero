@@ -5,12 +5,26 @@ const connection = require('./database/connection');
 
 const routes = Router()
 
-routes.post('/ongs', (req, res) => {
-  const { name, email, whatsapp, city, uf } = req.body
+routes.get('/ongs', async (req, res) => {
+  const ongs = await connection('ongs').select('*')
 
-  const id = crypto.randomBytes(4).toString('HEX')
+  return res.json(ongs)
+})
 
-  return res.json({ id })
+routes.post('/ongs', async (req, res) => {
+  const { name, email, whatsapp, city, uf } = req.body;
+
+  const id = crypto.randomBytes(4).toString("HEX");
+
+  await connection("ongs").insert({
+    id,
+    name,
+    email,
+    whatsapp,
+    city,
+    uf
+  });
+  return res.json({ id });
 })
 
 module.exports = routes;
