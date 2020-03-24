@@ -5,7 +5,6 @@ module.exports = {
     const { title, description, value } = req.body
 
     const ong_id = req.headers.authorization
-    console.log(ong_id)
 
     const [id] = await connection('incidents').insert({
       title,
@@ -21,5 +20,24 @@ module.exports = {
     const incidents = await connection('incidents').select('*')
 
     return res.json(incidents)
+  },
+
+  async delete(req, res){
+    const { id } = req.params
+    const ong_id = req.headers.authorization
+
+    const incident = await connection('incidents')
+      .where('id', id)
+      .select('*')
+      .first()
+      
+
+      if (incident.ong_id !== ong_id){
+        return res.status(401).json({'error': 'Operation not permited'})
+      }
+
+      await connection('incidents').where('id', id).delete()
+
+      return res.status(204).send()
   }
 }
