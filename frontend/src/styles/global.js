@@ -39,6 +39,18 @@ export default createGlobalStyle`
     border-radius: 8px;
     padding: 0 24px;
   }
+  
+  form textarea {
+    width: 100%;
+    resize: none;
+    min-height 140px;
+    height: 60px;
+    color: ${theme.primary.text};
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 16px 24px;
+    line-height: 24px;
+  }
 
   .button {
     width: 100%;
