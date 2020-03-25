@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 
 import { RegisterContainer } from './styles';
-import { Button } from '../../components/Button/styles';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -34,7 +33,7 @@ function Register() {
             <input placeholder="UF" style={{ width: 80 }}/>
           </div>
 
-          <Button type="submit">Cadastrar</Button>
+          <button className='button' type="submit">Cadastrar</button>
         </form>
       </div>
     </RegisterContainer>
