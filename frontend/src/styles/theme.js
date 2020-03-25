@@ -1,12 +1,13 @@
 export const theme = {
   primary: {
-    bg: '#F3F3F3',
-    text: '#4F5159',
-    active: '#634D90',
+    bg: '#F0F0F5',
+    text: '#333',
+    active: '#41414d',
+    fill: '#E02041',
   },
   secundary: {
     bg: '#F9F9F9',
-    text: '#FFFFFF',
+    text: '#fff',
   },
 };
 

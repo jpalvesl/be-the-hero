@@ -3,17 +3,16 @@ import { createGlobalStyle } from 'styled-components';
 import { theme } from './theme';
 
 export default createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    &::selection {
-      background-color: ${theme.primary.active};
-      color: ${theme.primary.text};
-    }
   }
+
   html, body {
-    font: 16px sans-serif;
+    font: 400 14px Roboto, sans-serif;
     background-color: ${theme.primary.bg};
     color: ${theme.primary.text};
     text-rendering: optimizeLegibility;
@@ -22,5 +21,22 @@ export default createGlobalStyle`
   }
   html {
     scroll-behavior: smooth;
+  }
+
+  input, button, textarea {
+    font: 400 14px Roboto, sans-serif;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  form input {
+    width: 100%;
+    height: 60px;
+    color: ${theme.primary.text};
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
   }
 `;
