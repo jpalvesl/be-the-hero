@@ -39,4 +39,24 @@ export default createGlobalStyle`
     border-radius: 8px;
     padding: 0 24px;
   }
+
+  .back-link {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: ${theme.primary.text};
+    font-size: 18px;
+    text-decoration: none;
+    font-weigth: 500;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+    
+    svg {
+      margin-right: 8px;
+    }
+  }
+}
 `;
