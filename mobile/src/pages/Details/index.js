@@ -1,7 +1,7 @@
 import React from 'react';
 import { Linking } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import * as MailComposer from 'expo-mail-composer';
 
 import logoImg from '../../assets/logo.png';
@@ -24,7 +24,10 @@ import {
 
 function Details() {
   const navigation = useNavigation()
-  const message = 'Olá Jasntuscara, estou entrando em contato, pois gostaria de ajudar no caso do "Jogador de inhasso" com o valor de R$ 120,00'
+  const route = useRoute()
+
+  const incident = route.params.incident
+  const message = `Olá ${incident.name}, estou entrando em contato, pois gostaria de ajudar no caso do "${incident.title}" com o valor de ${Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}`
 
   function navigateBack() {
     navigation.goBack()
@@ -32,14 +35,14 @@ function Details() {
 
   function sendMail() {
     MailComposer.composeAsync({
-      subject: 'Herói do caso: Jogador de Inhasso',
-      recipients: ['jpalvesl101@gmail.com'],
+      subject: `Herói do caso: ${incident.title}`,
+      recipients: [incident.email],
       body: message
     })
   }
 
   function sendWhatsapp() {
-    Linking.openURL(`whatsapp://send?phone=+5583986042067&text=${message}`)
+    Linking.openURL(`whatsapp://send?phone=${incident.whatsapp}&text=${message}`)
   }
 
   return (
@@ -53,13 +56,18 @@ function Details() {
 
       <Incident>
         <IncidentProperty>ONG:</IncidentProperty>
-        <IncidentValue>APAD</IncidentValue>
+        <IncidentValue>{incident.name} de {incident.city}/{incident.uf}</IncidentValue>
 
         <IncidentProperty>CASO:</IncidentProperty>
-        <IncidentValue>JOGADOR DE INHASSO</IncidentValue>
+        <IncidentValue>{incident.title}</IncidentValue>
 
         <IncidentProperty>VALOR</IncidentProperty>
-        <IncidentValue>R$ 120,00</IncidentValue>
+        <IncidentValue>
+          {Intl.NumberFormat('pt-BR', { 
+            style: 'currency', 
+            currency: 'BRL'
+          }).format(incident.value)}
+        </IncidentValue>
       </Incident>
 
       <ContactBox>

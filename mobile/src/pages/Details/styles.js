@@ -13,12 +13,9 @@ export const Header = styled.View`
   align-items: center;
 `;
 
-export const Logo = styled.Image`
-
-`;
+export const Logo = styled.Image``;
 
 export const Button = styled.TouchableOpacity``;
-
 
 export const Incident = styled.View`
   padding: 24px;
