@@ -4,7 +4,7 @@ import { theme } from '../../styles/theme';
 
 export const ProfileContainer = styled.div`
   width: 100%;
-  max-width: 1180;
+  max-width: 1180px;
   padding: 0 30px;
   margin: 32px auto;
 
