@@ -46,6 +46,10 @@ export const RegisterContainer = styled.div`
 
       input {
         margin-top: 8px;
+        
+        &::-webkit-calendar-picker-indicator {
+          display: none;
+        }
       }
 
       div {

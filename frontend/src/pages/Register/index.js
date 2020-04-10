@@ -8,6 +8,9 @@ import { RegisterContainer } from './styles';
 
 import logoImg from '../../assets/logo.svg';
 
+import cities from '../../assets/data/cities.json'
+import states from '../../assets/data/states.json'
+
 function Register() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -38,6 +41,22 @@ function Register() {
     }
 
   }
+
+  function stateObject() {
+    const ufObject = states.filter((state) => (state.Sigla === uf))
+    return ufObject[0]
+  }
+
+  function citiesFiltered() {
+    const ufObject = stateObject()
+
+    if (ufObject) {
+      return cities.filter((city) => (city.Estado === ufObject.ID))
+    }
+    return []
+  }
+
+
 
   return (
     <RegisterContainer>
@@ -80,14 +99,28 @@ function Register() {
               placeholder="Cidade"
               value={city}
               onChange={e => setCity(e.target.value)}
+              list="city-list"
             />
+
+            <datalist id="city-list">
+              {citiesFiltered().map((city) => (
+                <option key={`${city.ID}_${city.Estado}`} value={city.Nome} ></option>
+              ))}
+            </datalist>
 
             <input 
             placeholder="UF"
               style={{ width: 80 }}
               value={uf}
               onChange={e => setUf(e.target.value)}
+              list="uf-list"
             />
+
+            <datalist id="uf-list">
+              {states.map((uf) => (
+                <option value={uf.Sigla} ></option>
+              ))}
+            </datalist>
           </div>
 
           <button className='button' type="submit">Cadastrar</button>
