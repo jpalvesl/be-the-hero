@@ -68,7 +68,7 @@ export default createGlobalStyle`
     line-height: 60px;
     transition: filter 0.2s;
 
-    &:hover {
+    &:hover, &:focus {
       filter: brightness(80%);
       }
     }
@@ -83,7 +83,7 @@ export default createGlobalStyle`
     font-weigth: 500;
     transition: opacity 0.2s;
 
-    &:hover {
+    &:hover, &:focus {
       opacity: 0.8;
     }
     

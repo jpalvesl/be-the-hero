@@ -47,7 +47,19 @@ export const NewIncidentContainer = styled.div`
       input, textarea {
         margin-top: 8px;
       }
-      
+
+      /*  removing arrows in the input type number */
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
     }
   }
 `;

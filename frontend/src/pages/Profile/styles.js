@@ -48,7 +48,7 @@ export const ProfileContainer = styled.div`
         border: 0;
         background: transparent;
 
-        &:hover {
+        &:hover, &:focus {
           opacity: 0.8;
         }
       }
@@ -78,12 +78,12 @@ export const ProfileContainer = styled.div`
       height: 60px;
       width: 60px;
       border-radius: 4px;
-      border: 1px solid #dcdce6;
+      border: 2px solid #dcdce6;
       background: transparent;
       margin-left: 16px;
       transition: border-color 0.2s;
 
-      &:hover {
+      &:hover, &:focus {
         border-color: #999;
       }
     }

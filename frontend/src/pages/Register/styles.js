@@ -47,6 +47,7 @@ export const RegisterContainer = styled.div`
       input {
         margin-top: 8px;
         
+        /* removing arrow in the inputs with suggestions */
         &::-webkit-calendar-picker-indicator {
           display: none;
         }

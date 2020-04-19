@@ -70,7 +70,9 @@ function NewIncident(){
             onChange={e => setDescription(e.target.value)}
           />
 
-          <input 
+          <input
+            type="number"
+            min='1' 
             placeholder="Valor em reais"
             value={value}
             onChange={e => setValue(e.target.value)}
