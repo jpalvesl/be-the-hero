@@ -12,7 +12,7 @@ import logoImg from '../../assets/logo.svg';
 function Profile() {
   const [incidents, setIncidents] = useState([])
 
-  const hisrory = useHistory()
+  const history = useHistory()
 
   const ongId = localStorage.getItem('ongId')
   const ongName = localStorage.getItem('ongName')
@@ -44,7 +44,7 @@ function Profile() {
 
   function handleLogout() {
     localStorage.clear()
-    hisrory.push('/')
+    history.push('/')
   }
 
   return (
