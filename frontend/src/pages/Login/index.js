@@ -5,6 +5,7 @@ import { FiLogIn } from 'react-icons/fi';
 import api from '../../services/api';
 
 import { LoginContainer } from './styles';
+import { theme } from '../../styles/theme';
 
 import HeroesImg from '../../assets/heroes.png';
 import LogoImg from '../../assets/logo.svg';
@@ -41,7 +42,7 @@ function Login() {
           />
           <button className="button" type="submit" >Entrar</button>
           <Link to="/register" className="back-link">
-            <FiLogIn size={16} color="#e02041"/>
+            <FiLogIn size={16} color={theme.primary.fill}/>
             Não tenho cadastro
           </Link>
         </form>

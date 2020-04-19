@@ -5,6 +5,7 @@ import { FiPower, FiTrash2 } from 'react-icons/fi';
 import api from '../../services/api';
 
 import { ProfileContainer } from './styles';
+import { theme } from '../../styles/theme';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -54,7 +55,7 @@ function Profile() {
 
         <Link className="button" to="/incidents/new">Cadastrar novo caso</Link>
         <button onClick={handleLogout} type="button">
-          <FiPower size={18} color="#e02041" />
+          <FiPower size={18} color={theme.primary.fill} />
         </button>
       </header>
 
@@ -72,7 +73,7 @@ function Profile() {
           <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(incident.value)}</p>
 
           <button onClick={() => (handleDeleteIncident(incident.id))} type="button">
-            <FiTrash2 size={20} color="#a8a8b3" />
+            <FiTrash2 size={20} color={theme.primary.trash} />
           </button>
 
         </li>

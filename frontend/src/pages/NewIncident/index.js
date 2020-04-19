@@ -5,6 +5,7 @@ import { FiArrowLeft } from 'react-icons/fi';
 import api from '../../services/api';
 
 import { NewIncidentContainer } from './styles';
+import { theme } from '../../styles/theme';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -50,7 +51,7 @@ function NewIncident(){
           <p>Descreva o caso detalhadamente para encontrar um herói para resolver isso.</p>
         
           <Link to="/profile" className="back-link">
-            <FiArrowLeft size={16} color="#e02041"/>
+            <FiArrowLeft size={16} color={theme.primary.fill}/>
             Voltar para Home
           </Link>
 

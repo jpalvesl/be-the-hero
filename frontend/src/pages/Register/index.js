@@ -5,11 +5,13 @@ import { FiArrowLeft } from 'react-icons/fi';
 import api from '../../services/api';
 
 import { RegisterContainer } from './styles';
+import { theme } from '../../styles/theme';
 
 import logoImg from '../../assets/logo.svg';
 
-import cities from '../../assets/data/cities.json'
-import states from '../../assets/data/states.json'
+import cities from '../../assets/data/cities.json';
+import states from '../../assets/data/states.json';
+
 
 function Register() {
   const [name, setName] = useState('')
@@ -68,7 +70,7 @@ function Register() {
           <p>Faça seu cadastro entre na plataforma e ajude pessoas a encontrarem os casos da sua ONG.</p>
         
           <Link to="/" className="back-link">
-            <FiArrowLeft size={16} color="#e02041"/>
+            <FiArrowLeft size={16} color={theme.primary.fill}/>
             Já tenho cadastro
           </Link>
 

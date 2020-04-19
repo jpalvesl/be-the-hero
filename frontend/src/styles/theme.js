@@ -6,6 +6,7 @@ export const theme = {
     strong: '#41414d',
     active: '#41414d',
     fill: '#E02041',
+    trash: '#a8a8b3',
   },
   secundary: {
     bg: '#F9F9F9',
