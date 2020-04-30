@@ -43,7 +43,7 @@ export default createGlobalStyle`
   form textarea {
     width: 100%;
     resize: none;
-    min-height 140px;
+    min-height: 140px;
     height: 60px;
     color: ${theme.primary.text};
     border: 1px solid #dcdce6;
@@ -80,7 +80,7 @@ export default createGlobalStyle`
     color: ${theme.primary.text};
     font-size: 18px;
     text-decoration: none;
-    font-weigth: 500;
+    font-weight: 500;
     transition: opacity 0.2s;
 
     &:hover, &:focus {
@@ -91,5 +91,4 @@ export default createGlobalStyle`
       margin-right: 8px;
     }
   }
-}
 `;
