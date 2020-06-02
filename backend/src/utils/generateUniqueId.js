@@ -1,5 +1,5 @@
-const crypto = require('crypto');
+const { v4: uuidv4 } = require('uuid');
 
 module.exports = function generateUniqueID(){
-  return crypto.randomBytes(4).toString("HEX")  
+  return uuidv4()
 }

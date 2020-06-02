@@ -4564,6 +4564,11 @@ uuid@^7.0.1:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.2.tgz#7ff5c203467e91f5e0d85cfcbaaf7d2ebbca9be6"
   integrity sha512-vy9V/+pKG+5ZTYKf+VcphF5Oc6EFiu3W8Nv3P3zIh0EqVI80ZxOzuPfe9EHjkFNvf8+xuTHVeei4Drydlx4zjw==
 
+uuid@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.1.0.tgz#6f1536eb43249f473abc6bd58ff983da1ca30d8d"
+  integrity sha512-CI18flHDznR0lq54xBycOVmphdCYnQLKn8abKn7PXUiKUGdEd+/l9LWNJmugXel4hXq7S+RMNl34ecyC9TntWg==
+
 v8-to-istanbul@^4.0.1:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/v8-to-istanbul/-/v8-to-istanbul-4.1.2.tgz#387d173be5383dbec209d21af033dcb892e3ac82"

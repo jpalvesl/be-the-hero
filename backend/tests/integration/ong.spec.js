@@ -18,12 +18,11 @@ describe('ONG', () => {
       .send({
         name: "Test Ong",
         email: "jpalvesl101@gmail.com",
-        whatsapp: "83986042067",
+        whatsapp: "+5583986042067",
         city: "Campina Grande",
         uf: "PB"
       })
-
     expect(response.body).toHaveProperty('id')
-    expect(response.body.id).toHaveLength(8)
+    expect(response.body.id).toHaveLength(36)
   })
 })
