@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useHistory, Redirect } from 'react-router-dom';
 import { FiLogIn } from 'react-icons/fi';
 
 import api from '../../services/api';
@@ -28,6 +28,12 @@ function Login() {
       alert('Falha no login')
     }
   }
+
+  console.log(localStorage.getItem('ongId'), localStorage.getItem('ongName'))
+  if (!!localStorage.getItem('ongId') && !!localStorage.getItem('ongName')) {
+    return <Redirect to='/profile'/>;
+  }
+
 
   return (
     <LoginContainer>

@@ -59,7 +59,6 @@ function Register() {
   }
 
 
-
   return (
     <RegisterContainer>
       <div>
