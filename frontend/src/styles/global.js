@@ -31,10 +31,19 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
-  form input {
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+  form input,
+  form select {
     width: 100%;
     height: 60px;
     color: ${theme.primary.text};
+    background-color: ${theme.secundary.text};
     border: 1px solid #dcdce6;
     border-radius: 8px;
     padding: 0 24px;

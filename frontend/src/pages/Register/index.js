@@ -96,32 +96,25 @@ function Register() {
           />
 
           <div>
-            <input 
-              placeholder="Cidade"
-              value={city}
-              onChange={e => setCity(e.target.value)}
-              list="city-list"
-            />
-
-            <datalist id="city-list">
-              {citiesFiltered().map((city) => (
-                <option key={`${city.ID}_${city.Estado}`} value={city.Nome} ></option>
-              ))}
-            </datalist>
-
-            <input 
-            placeholder="UF"
-              style={{ width: 80 }}
+            <select 
+              style={{ width: 80 }} 
               value={uf}
               onChange={e => setUf(e.target.value)}
-              list="uf-list"
-            />
-
-            <datalist id="uf-list">
+            >
+              <option>UF</option>
               {states.map((uf) => (
-                <option value={uf.Sigla} ></option>
+                <option value={uf.Sigla} >{uf.Sigla}</option>
               ))}
-            </datalist>
+            </select>
+            <select
+              value={city}
+              onChange={e => setCity(e.target.value)}
+            >
+              <option>Cidade</option>
+              {citiesFiltered().map((city) => (
+                <option key={`${city.ID}_${city.Estado}`} value={city.Nome} >{city.Nome}</option>
+                ))}
+            </select>
           </div>
 
           <button className='button' type="submit">Cadastrar</button>

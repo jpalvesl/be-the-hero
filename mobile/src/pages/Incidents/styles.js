@@ -1,6 +1,8 @@
 import styled from 'styled-components/native';
 import Constants from 'expo-constants';
 
+import colors from '../../styles/colors';
+
 export const Container = styled.View`
 flex: 1;
 padding-horizontal: 24px;
@@ -10,14 +12,14 @@ padding-top: ${Constants.statusBarHeight + 20}px;
 export const Header = styled.View`
 flex-direction: row;
 justify-content: space-between;
-alignItems: center;
+align-items: center;
 `;
 
 export const Logo = styled.Image``;
 
 export const HeaderText = styled.Text`
   font-size: 15px;
-  color: #737380;
+  color: ${colors.primary.description};
 `;
 
 export const HeaderTextBold = styled.Text`
@@ -28,14 +30,14 @@ export const Title = styled.Text`
   font-size: 30px;
   margin-bottom: 16px;
   margin-top: 48px;
-  color: #13131a;
+  color: ${colors.primary.title};
   font-weight: bold;
 `;
 
 export const Description = styled.Text`
   font-size: 16px;
   line-height: 24px;
-  color: #737380;
+  color: ${colors.primary.description};
 `;
 
 export const IncidentList = styled.FlatList`
@@ -45,13 +47,13 @@ export const IncidentList = styled.FlatList`
 export const Incident = styled.View`
   padding: 24px;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: ${colors.primary.box};
   margin-bottom: 16px;
 `;
 
 export const IncidentProperty = styled.Text`
   font-size: 14px;
-  color: #41414d;
+  color: ${colors.primary.property};
   font-weight: bold;
 `;
 
@@ -59,7 +61,7 @@ export const IncidentValue = styled.Text`
   margin-top: 8px;
   font-size: 15px;
   margin-bottom: 24px;
-  color: #737380;
+  color: ${colors.primary.value};
 `;
 
 export const DetailsButton = styled.TouchableOpacity`
@@ -69,7 +71,7 @@ export const DetailsButton = styled.TouchableOpacity`
 `;
 
 export const DetailsButtonText = styled.Text`
-  color: #E02041;
+  color: ${colors.primary.firstColor};
   font-size: 15px;
   font-weight: bold;
 `;

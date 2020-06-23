@@ -22,6 +22,8 @@ import {
   DetailsButtonText,
 } from './styles';
 
+import colors from '../../styles/colors';
+
 function Incidents() {
   const [incidents, setIncidents] = useState([])
   const [total, setTotal] = useState(0)
@@ -96,7 +98,7 @@ function Incidents() {
 
             <DetailsButton onPress={() => navigateToDetail(incident)}>
               <DetailsButtonText>Ver detalhes</DetailsButtonText>
-              <Feather name="arrow-right" size={16} color="#E02041" />
+              <Feather name="arrow-right" size={16} color={colors.primary.firstColor} />
             </DetailsButton>
         </Incident>
         )}

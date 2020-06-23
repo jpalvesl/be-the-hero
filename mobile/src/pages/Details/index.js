@@ -22,6 +22,8 @@ import {
   ActionText
 } from './styles';
 
+import colors from '../../styles/colors';
+
 function Details() {
   const navigation = useNavigation()
   const route = useRoute()
@@ -50,7 +52,7 @@ function Details() {
       <Header>
         <Logo source={logoImg} />
         <Button onPress={navigateBack}>
-          <Feather name="arrow-left" size={28} color="#E02041" />
+          <Feather name="arrow-left" size={28} color={colors.primary.firstColor} />
         </Button>
       </Header>
 

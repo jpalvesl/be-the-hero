@@ -44,7 +44,7 @@ export const RegisterContainer = styled.div`
       width: 100%;
       max-width: 450px;
 
-      input {
+      input, select {
         margin-top: 8px;
         
         /* removing arrow in the inputs with suggestions */
@@ -56,7 +56,7 @@ export const RegisterContainer = styled.div`
       div {
         display: flex;
 
-        input + input {
+        select + select {
           margin-left: 8px;
         }
       }

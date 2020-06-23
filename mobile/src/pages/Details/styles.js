@@ -1,9 +1,11 @@
 import styled from 'styled-components/native';
 import Constants from 'expo-constants';
 
+import colors from '../../styles/colors';
+
 export const Container = styled.View`
   flex: 1;
-  padding-horizontal: 24px;
+  padding: 0 24px;
   padding-top: ${Constants.statusBarHeight + 20}px;
 `;
 
@@ -20,40 +22,40 @@ export const Button = styled.TouchableOpacity``;
 export const Incident = styled.View`
   padding: 24px;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: ${colors.primary.box};
   margin-bottom: 16px;
   margin-top: 48px;
 `;
 
 export const IncidentProperty = styled.Text`
   font-size: 14px;
-  color: #41414d;
+  color: ${colors.primary.property};
   font-weight: bold;
 `;
 
 export const IncidentValue = styled.Text`
   margin-top: 8px;
   font-size: 15px;
-  color: #737380;
+  color: ${colors.primary.value};
 `;
 
 export const ContactBox = styled.View`
   padding: 24px;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: ${colors.primary.box};
   margin-bottom: 16px;
 `;
 
 export const HeroTitle = styled.Text`
   font-weight: bold;
   font-size: 20px;
-  color: #13131a;
+  color: ${colors.primary.title};
   line-height: 30px;
 `;
 
 export const HeroDescription = styled.Text`
   font-size: 15px;
-  color: #737380;
+  color: ${colors.primary.description};
   margin-top: 16px
 `;
 
@@ -64,7 +66,7 @@ export const Actions = styled.View`
 `;
 
 export const Action = styled.TouchableOpacity`
-  background-color: #E02041;
+  background-color: ${colors.primary.firstColor};
   border-radius: 8px;
   height: 50px;
   width: 48%;
@@ -73,7 +75,7 @@ export const Action = styled.TouchableOpacity`
 `;
 
 export const ActionText = styled.Text`
-  color: #fff;
+  color: ${colors.primary.actionText};
   font-size: 15px;
   font-weight: bold;
 `;
