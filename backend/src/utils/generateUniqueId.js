@@ -1,5 +1,5 @@
-const { v4: uuidv4 } = require('uuid');
+const { v4: uuid4 } = require('uuid');
 
 module.exports = function generateUniqueID(){
-  return uuidv4()
+  return uuid4();
 }
