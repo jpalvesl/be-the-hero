@@ -1,17 +1,16 @@
 <h1 align="center">
-  Be The Hero - Web
+  Be The Hero - Backend
 </h1>
 
 <!-- summary -->
 <p align="center">
   <a href="#clipboard-description">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-whats-inside">What's inside?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-whats-inside">What's inside?</a>&nbsp;&nbsp;&nbsp;
 </p>
 
-
 ## :clipboard: Description
-A web application made with ReactJs
+An api made with Nodejs.
 
 ## :rocket: Getting Started
 
@@ -23,8 +22,6 @@ A web application made with ReactJs
 ```
 
 2. Installation
-
-2. Installation
 ```shell
   yarn
   npm install
@@ -32,41 +29,35 @@ A web application made with ReactJs
 
 3. Execution
 ```shell
-  yarn start
-  npm run start
+  yarn dev
+  npm run dev
 ```
-
 
 ## 🧐 What's inside?
 
 ### :building_construction: Technologies
-- [ReactJs](https://pt-br.reactjs.org/)
-  
+- [Nodejs](https://nodejs.org/en/)
 
 ### :package: Packages
-- [Axios](https://github.com/axios/axios)
-- [Styled Components](https://github.com/styled-components/styled-components)
-- [React Router Dom](https://github.com/ReactTraining/react-router)
-- [React Icons](https://github.com/react-icons/react-icons)
+- [express](https://github.com/expressjs/express)
+- [knex](https://github.com/knex/knex)
+- [sqlite3](https://github.com/mapbox/node-sqlite3)
+- [celebrate](https://github.com/arb/celebrate)
+- [cors](https://github.com/expressjs/cors)
+- [jest](https://github.com/facebook/jest)
+- [supertest](https://github.com/visionmedia/supertest)
+  
 
 ### A quick look at the top-level directories inside the `./src`.
 
     ./src
-     ├── assets
-     ├── components
-     ├── pages
-     ├── services
-     ├── styles
-
-1.  **`assets`**: all resources used. How icons, images, etc.
-
-2.  **`components`**: each components shared in aplication.
-
-3.  **`pages`**: each file is a website page.
-   
-4.  **`services`**: connection with api.
-
-5.  **`styles`**: global styles and colors.
+     ├── controllers
+     ├── database
+     ├── middlewares
+     ├── utils
+    ./tests
+     ├── integration
+     ├── unit
 
 
 ---

@@ -1,5 +1,5 @@
 <h1 align="center">
-  Be The Hero - Web
+  Be The Hero - Mobile
 </h1>
 
 <!-- summary -->
@@ -11,7 +11,7 @@
 
 
 ## :clipboard: Description
-A web application made with ReactJs
+A mobile application made with React Native
 
 ## :rocket: Getting Started
 
@@ -40,33 +40,33 @@ A web application made with ReactJs
 ## 🧐 What's inside?
 
 ### :building_construction: Technologies
-- [ReactJs](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.io/)
   
 
 ### :package: Packages
 - [Axios](https://github.com/axios/axios)
 - [Styled Components](https://github.com/styled-components/styled-components)
 - [React Router Dom](https://github.com/ReactTraining/react-router)
-- [React Icons](https://github.com/react-icons/react-icons)
+- [Expo Mail Composer](https://docs.expo.io/versions/v37.0.0/sdk/mail-composer/)
+- [Intl](https://github.com/andyearnshaw/Intl.js)
+- [React Navigation](https://reactnavigation.org/)
 
 ### A quick look at the top-level directories inside the `./src`.
 
     ./src
      ├── assets
-     ├── components
      ├── pages
-     ├── services
      ├── styles
+     ├── services
 
 1.  **`assets`**: all resources used. How icons, images, etc.
 
-2.  **`components`**: each components shared in aplication.
-
 3.  **`pages`**: each file is a website page.
-   
+
 4.  **`services`**: connection with api.
 
-5.  **`styles`**: global styles and colors.
+5.  **`styles`**: colors of aplication.
 
 
 ---
