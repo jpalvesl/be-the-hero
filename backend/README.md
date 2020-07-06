@@ -55,9 +55,6 @@ An api made with Nodejs.
      ├── database
      ├── middlewares
      ├── utils
-    ./tests
-     ├── integration
-     ├── unit
 
 
 ---

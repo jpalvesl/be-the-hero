@@ -6,7 +6,7 @@
 <p align="center">
   <a href="#clipboard-description">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-whats-inside">What's inside?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-whats-inside">What's inside?</a>
 </p>
 
 
@@ -21,8 +21,6 @@ A web application made with ReactJs
 ```shell
   git clone https://github.com/jpalvesl/be-the-hero.git
 ```
-
-2. Installation
 
 2. Installation
 ```shell

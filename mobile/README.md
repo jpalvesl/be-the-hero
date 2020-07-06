@@ -6,7 +6,7 @@
 <p align="center">
   <a href="#clipboard-description">Description</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-whats-inside">What's inside?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-whats-inside">What's inside?</a>
 </p>
 
 
@@ -21,8 +21,6 @@ A mobile application made with React Native
 ```shell
   git clone https://github.com/jpalvesl/be-the-hero.git
 ```
-
-2. Installation
 
 2. Installation
 ```shell
@@ -47,7 +45,6 @@ A mobile application made with React Native
 ### :package: Packages
 - [Axios](https://github.com/axios/axios)
 - [Styled Components](https://github.com/styled-components/styled-components)
-- [React Router Dom](https://github.com/ReactTraining/react-router)
 - [Expo Mail Composer](https://docs.expo.io/versions/v37.0.0/sdk/mail-composer/)
 - [Intl](https://github.com/andyearnshaw/Intl.js)
 - [React Navigation](https://reactnavigation.org/)
@@ -62,11 +59,11 @@ A mobile application made with React Native
 
 1.  **`assets`**: all resources used. How icons, images, etc.
 
-3.  **`pages`**: each file is a website page.
+2.  **`pages`**: each file is a website page.
+
+3.  **`styles`**: colors of aplication.
 
 4.  **`services`**: connection with api.
-
-5.  **`styles`**: colors of aplication.
 
 
 ---
