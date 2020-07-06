@@ -18,7 +18,9 @@
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/jpalvesl/be-the-hero">
   
   <!-- Run repo in gitpod -->
-  [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/jpalvesl/be-the-hero) 
+  <a href="https://gitpod.io/#https://github.com/jpalvesl/be-the-hero" alt="License: MIT">
+    <img src="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod" />
+  </a>
 
   <!-- Social -->  
   <a href="https://github.com/jpalvesl/be-the-hero/stargazers">
